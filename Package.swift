@@ -27,9 +27,9 @@ extension Target {
 extension Target {
   static func rxCocoa() -> [Target] {
     #if os(Linux)
-      return [.rxTarget(name: "RxCocoa", dependencies: ["RxSwift", "RxRelay"])]
+      return [.rxTarget(name: "RxCocoa", dependencies: ["RxRelay"])]
     #else
-      return [.rxTarget(name: "RxCocoa", dependencies: ["RxSwift", "RxRelay", "RxCocoaRuntime"])]
+      return [.rxTarget(name: "RxCocoa", dependencies: ["RxRelay", "RxCocoaRuntime"])]
     #endif
   }
 
